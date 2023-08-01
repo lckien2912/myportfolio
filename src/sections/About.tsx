@@ -27,22 +27,6 @@ const About = () => {
             to apply to my products.
           </p>
           <TechStacks />
-          {/* <motion.div
-            variants={motionContainer(0.3, 0.2)}
-            initial="hidden"
-            whileInView="visible"
-            className="grid grid-cols-6 gap-4 mt-2 justify-items-center items-center w-full  sm:max-md:w-[450px] "
-          >
-            {DETAIL_ITEMS.map(({ title, description, iconLink }, index) => (
-              <DetailItem
-                key={title}
-                index={index}
-                title={title}
-                description={description}
-                imgSrc={iconLink}
-              />
-            ))}
-          </motion.div> */}
         </div>
       </div>
     </Section>

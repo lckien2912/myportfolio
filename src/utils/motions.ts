@@ -6,7 +6,6 @@ export const eventMotion = (
 ): Variants => ({
   hover: {
     scale: scaleHover,
-    // opacity: 0.85,
   },
   tap: {
     scale: scaleTap,

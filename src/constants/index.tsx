@@ -1,7 +1,3 @@
-import nameIcon from "@/assets/name-card-icon_31834.png";
-import educationIcon from "@/assets/3069198-cap-education-hat-school_112714 (1).png";
-import emailIcon from "@/assets/google_mail_gmail_logo_icon_159346.png";
-import jobIcon from "@/assets/job_employment_find_recuitment_seeker_icon_192532.png";
 import githubIcon from "@/assets/github-logo_icon-icons.com_73546.png";
 import fbIcon from "@/assets/facebook_logo_icon_147291.png";
 import htmlIcon from "@/assets/file_type_html_icon_130541.png";
@@ -84,29 +80,6 @@ export const HELLO_LINK_ITEMS = [
     href: "https://www.linkedin.com/in/kienlc/",
     className: "w-[48px]",
     target: "_blank",
-  },
-];
-
-export const DETAIL_ITEMS = [
-  {
-    title: "Name",
-    description: "Le Chi Kien",
-    iconLink: nameIcon,
-  },
-  {
-    title: "Education",
-    description: "PTIT (Graduated)",
-    iconLink: educationIcon,
-  },
-  {
-    title: "Email",
-    description: "lechikien123@gmail.com",
-    iconLink: emailIcon,
-  },
-  {
-    title: "Employment",
-    description: "Open",
-    iconLink: jobIcon,
   },
 ];
 

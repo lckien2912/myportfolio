@@ -1,5 +1,5 @@
-import { Navbar, Footer } from "@/components";
-import { Hello, About, Experiences, Projects, Contact } from "@/sections";
+import { Navbar } from "@/components";
+import { Hello, About, Projects, Contact } from "@/sections";
 
 const App = () => {
   return (
@@ -8,10 +8,8 @@ const App = () => {
       <div className="overflow-x-hidden">
         <Hello />
         <About />
-        {/* <Experiences /> */}
         <Projects />
         <Contact />
-        {/* <Footer /> */}
       </div>
     </main>
   );

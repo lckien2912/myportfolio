@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/utils";
 
 let modalRoot: Element | DocumentFragment | null;
-//   document.getElementById("modal-root");
 
 if (!document.getElementById("modal-root")) {
   const modalRootDiv = document.createElement("div");
