@@ -1,0 +1,12 @@
+export { default as Navbar } from "@/components/Navbar";
+export { default as Footer } from "@/components/Footer";
+export { default as MainNav } from "@/components/MainNav";
+export { default as ScrollProgress } from "@/components/ScrollProgress";
+export { default as Section } from "@/components/Section";
+export { default as NavItem } from "@/components/NavItem";
+export { default as SectionHeading } from "@/components/SectionHeading";
+export { default as DetailItem } from "@/components/DetailItem";
+export { default as MobileNav } from "@/components/MobileNav";
+export { default as TechStacks } from "@/components/TechStack";
+export { default as ProjectItem } from "@/components/ProjectItem";
+export { default as Modal } from "@/components/Modal";
