@@ -10,14 +10,19 @@ const Projects = () => {
   return (
     <Section
       id="projects"
-      className="bg-experience-pattern bg-cover bg-center flex flex-col gap-4 py-24 relative"
+      className="bg-project-pattern bg-cover bg-center flex flex-col gap-4 relative"
     >
-      <div className="flex flex-col px-6 md:px-8 max-w-7xl gap-8 items-center justify-center">
-        <SectionHeading title="Projects" iconSrc={projectIcon} />
+      <div className="flex flex-col px-4 sm:px-6 md:px-8 max-w-7xl gap-8 items-center justify-center">
+        <SectionHeading
+          title="Projects"
+          iconSrc={projectIcon}
+          subtitle="Here you will find some of the personal and clients projects that I created"
+        />
         <div className="grid grid-cols-1 lg:grid-cols-3  gap-6">
-          {PROJECTS.map(({ imgSrc, name, description, className }) => (
+          {PROJECTS.map(({ imgSrc, name, description, className }, index) => (
             <ProjectItem
               key={name}
+              index={index}
               layoutId={name}
               name={name}
               imgSrc={imgSrc}

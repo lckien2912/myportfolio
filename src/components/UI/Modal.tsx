@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -28,10 +29,14 @@ const Modal: React.FC<ModalProps> = ({
   setClose,
   className,
 }) => {
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
+
   return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed w-full h-full z-100 top-0 left-0 flex justify-center items-center">
+        <div className="fixed w-full h-full z-100 top-0 left-0 flex justify-center items-center z-[1000]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.4 }}
@@ -53,7 +58,7 @@ const Modal: React.FC<ModalProps> = ({
               duration: 0.5,
             }}
             className={cn(
-              "z-30 rounded-3xl bg-white w-[90%] max-w-[800px]",
+              "z-30 rounded-3xl bg-white w-[90%] max-w-[800px] max-h-[90%]  font-quicksand font-semibold",
               className
             )}
             layoutId={isOpen}

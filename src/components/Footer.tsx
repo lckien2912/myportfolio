@@ -15,6 +15,7 @@ const Footer = () => {
               title={title}
               className={className}
               target={target}
+              variants="ghost"
             />
           ))}
         </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavItem } from "@/components";
 import { NAV_ITEMS } from "@/constants";
@@ -9,6 +10,10 @@ interface DialogProps {
 }
 
 const Dialog: React.FC<DialogProps> = ({ isOpen, handleToggle }) => {
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -62,13 +67,14 @@ const Dialog: React.FC<DialogProps> = ({ isOpen, handleToggle }) => {
             </div>
             <div className="px-8">
               <nav className="flex flex-col items-end gap-4">
-                {NAV_ITEMS.map(({ title, href, className }) => (
+                {NAV_ITEMS.map(({ title, href, className, variants }) => (
                   <NavItem
                     key={href}
                     href={href}
                     title={title}
                     className={className}
                     onClick={handleToggle}
+                    variants={variants}
                   />
                 ))}
               </nav>

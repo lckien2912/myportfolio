@@ -3,10 +3,20 @@ export default {
   mode: "jit",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    aspectRatio: {
+      "5/2": "5 / 2",
+    },
+    screens: {
+      xs: "500px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     backgroundImage: {
       "hello-pattern": "url('/src/assets/15186165_5566879.jpg')",
-      "experience-pattern": "url('/src/assets/19380875_6068268.jpg')",
-      "contact-pattern": "url('/src/assets/14456042_5397807.jpg')",
+      "project-pattern": "url('/src/assets/14456042_5397807.jpg')",
     },
     fontFamily: {
       quicksand: ['"Quicksand"', "sans-serif"],
