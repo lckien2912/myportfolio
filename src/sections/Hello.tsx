@@ -5,7 +5,7 @@ import profile from "@/assets/profile.jpg";
 import { HELLO_LINK_ITEMS } from "@/constants";
 import { motion } from "framer-motion";
 import { zoomIn } from "@/utils/motions";
-import CV from "@/assets//Le Chi Kien - Front-end Engineer.pdf";
+import CV from "@/assets/Le Chi Kien - Junior React Developer.pdf";
 
 const Hello = () => {
   return (

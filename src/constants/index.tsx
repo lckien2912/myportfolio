@@ -93,7 +93,7 @@ export const PROJECTS = [
       "React",
       "Next.js",
       "Typescript",
-      "Shadcn",
+      "Shadcn UI",
       "Headless UI",
       "Tailwind CSS",
       "React Hook Form",
@@ -113,7 +113,13 @@ export const PROJECTS = [
     description:
       "Metaverse is a term used to describe a virtual universe that is shared by millions of users around the world. It is a fully immersive environment that allows users to interact with each other and with virtual objects in real-time.",
     className: "",
-    techStacks: ["React", "Next.js", "JavaScript", "Tailwind CSS"],
+    techStacks: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
   },
   {
     name: "Features of GPT-3",
