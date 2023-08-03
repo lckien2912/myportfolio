@@ -5,7 +5,7 @@ import profile from "@/assets/profile.jpg";
 import { HELLO_LINK_ITEMS } from "@/constants";
 import { motion } from "framer-motion";
 import { zoomIn } from "@/utils/motions";
-import CV from "@/assets/Le Chi Kien - Junior React Developer.pdf";
+import CV from "@/assets/Le_Chi_Kien-React_Developer.pdf";
 
 const Hello = () => {
   return (
@@ -56,7 +56,6 @@ const Hello = () => {
               title="See my CV"
               href={CV}
               className="sm:py-2"
-              // target="_blank"
               download="Le_Chi_Kien-Junior_React_Developer"
             />
             <NavItem title="Hire me" href="#contact" className="sm:py-2" />
