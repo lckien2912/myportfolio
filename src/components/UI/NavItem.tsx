@@ -10,6 +10,7 @@ interface NavItemProps {
   variants?: string;
   onClick?: () => void;
   index?: number;
+  download?: string;
 }
 
 const NavItem: React.FC<NavItemProps> = ({
@@ -19,6 +20,7 @@ const NavItem: React.FC<NavItemProps> = ({
   target,
   variants = "primary",
   onClick,
+  download,
 }) => {
   return (
     <motion.a
@@ -33,6 +35,7 @@ const NavItem: React.FC<NavItemProps> = ({
       whileTap={{ scale: 0.9 }}
       target={target}
       onClick={onClick}
+      download={download}
     >
       {title}
     </motion.a>

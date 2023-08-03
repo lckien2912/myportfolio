@@ -56,7 +56,8 @@ const Hello = () => {
               title="See my CV"
               href={CV}
               className="sm:py-2"
-              target="_blank"
+              // target="_blank"
+              download="Le_Chi_Kien-Junior_React_Developer"
             />
             <NavItem title="Hire me" href="#contact" className="sm:py-2" />
           </motion.div>
