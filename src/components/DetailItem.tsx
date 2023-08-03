@@ -66,11 +66,12 @@ const DetailItem: React.FC<DetailItemProps> = ({ selectedId, setClose }) => {
           ))}
         </div>
         <p className="font-normal whitespace-pre-line max-h-[250px] overflow-y-auto">
-          <p className="font-bold">
-            Admin account:
-            <code> admin/Qwerty6688</code>
-          </p>
-          {/* <br /> */}
+          {selectedProject?.admin && (
+            <span className="block font-bold">
+              Admin account:
+              <code> admin/Qwerty6688</code>
+            </span>
+          )}
           {selectedProject?.description}
         </p>
         <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3">
