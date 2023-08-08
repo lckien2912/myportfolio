@@ -2,10 +2,9 @@ import { TypeAnimation } from "react-type-animation";
 
 import { NavItem, Section } from "@/components";
 import profile from "@/assets/profile.jpg";
-import { HELLO_LINK_ITEMS } from "@/constants";
+import { CV, HELLO_LINK_ITEMS } from "@/constants";
 import { motion } from "framer-motion";
 import { zoomIn } from "@/utils/motions";
-import CV from "@/assets/Le_Chi_Kien-Junior_React_Developer.pdf";
 
 const Hello = () => {
   return (
@@ -56,7 +55,7 @@ const Hello = () => {
               title="See my CV"
               href={CV}
               className="sm:py-2"
-              download="Le_Chi_Kien-Junior_React_Developer"
+              target="_blank"
             />
             <NavItem title="Hire me" href="#contact" className="sm:py-2" />
           </motion.div>

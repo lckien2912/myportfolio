@@ -36,11 +36,10 @@ const About = () => {
             viewport={{ once: true, amount: 0.25 }}
             className="text-center md:text-left md:text-lg md:leading-6"
           >
-            I'm a{" "}
-            <strong className="text-black">Junior ReactJS Developer</strong>{" "}
-            with a passion for building friendly and quality web applications.
-            I'm a quick learner and willing to learn cutting-edge technologies
-            to apply to my products.
+            I'm a <strong className="text-black">ReactJS Developer</strong> with
+            a passion for building friendly and quality web applications. I'm a
+            quick learner and willing to learn cutting-edge technologies to
+            apply to my products.
           </motion.p>
           <TechStacks />
         </div>

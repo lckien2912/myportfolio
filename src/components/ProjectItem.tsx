@@ -31,7 +31,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.95 }}
       className={cn(
-        "bg-[rgba(255,255,255,1)] flex rounded-2xl border-2 shadow-sm hover:shadow-lg flex-col cursor-pointer",
+        "bg-[rgba(255,255,255,1)] flex rounded-2xl shadow-md hover:shadow-lg flex-col cursor-pointer",
         className
       )}
       layoutId={layoutId}

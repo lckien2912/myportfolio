@@ -17,6 +17,9 @@ import tksImg from "@/assets/tks.png";
 import metaversus from "@/assets/metaversus.png";
 import gpt3 from "@/assets/gpt3.png";
 
+export const CV =
+  "https://drive.google.com/file/d/1DcOWbwKGSyA-WisVNrzCRWzGrc4Y6Fc2/view?usp=sharing";
+
 export const TECH_STACKS = [
   { name: "html", src: htmlIcon },
   { name: "css", src: cssIcon },
