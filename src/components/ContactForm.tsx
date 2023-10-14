@@ -4,8 +4,7 @@ import emailjs from "@emailjs/browser";
 import { ErrorMessage } from "@hookform/error-message";
 import { toast } from "react-hot-toast";
 import { zoomIn } from "@/utils/motions";
-
-const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "@/constants";
 
 export default function App() {
   const {
@@ -18,10 +17,10 @@ export default function App() {
   const onSubmit = async (data: Record<string, unknown>) => {
     try {
       const { status } = await emailjs.send(
-        VITE_SERVICE_ID!,
-        VITE_TEMPLATE_ID!,
+        SERVICE_ID!,
+        TEMPLATE_ID!,
         data,
-        VITE_PUBLIC_KEY
+        PUBLIC_KEY
       );
 
       if (status === 200) {

@@ -8,7 +8,7 @@ interface MainNavProps {
 
 const MainNav: React.FC<MainNavProps> = ({ className }) => {
   return (
-    <nav className={cn("flex items-center gap-4", className)}>
+    <nav className={cn("flex items-center gap-4 lg:gap-8", className)}>
       {NAV_ITEMS.map(({ title, href, className, variants }) => (
         <NavItem
           key={href}

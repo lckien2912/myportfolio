@@ -17,8 +17,12 @@ import tksImg from "@/assets/tks.png";
 import metaversus from "@/assets/metaversus.png";
 import gpt3 from "@/assets/gpt3.png";
 
-export const CV =
-  "https://drive.google.com/file/d/1DcOWbwKGSyA-WisVNrzCRWzGrc4Y6Fc2/view?usp=sharing";
+export const {
+  VITE_SERVICE_ID: SERVICE_ID,
+  VITE_TEMPLATE_ID: TEMPLATE_ID,
+  VITE_PUBLIC_KEY: PUBLIC_KEY,
+  VITE_CV: CV,
+} = import.meta.env;
 
 export const TECH_STACKS = [
   { name: "html", src: htmlIcon },
